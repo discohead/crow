@@ -31,6 +31,7 @@
 #include "lua/metro.lua.h"
 #include "lua/input.lua.h"
 #include "lua/output.lua.h"
+#include "lua/shaper.lua.h"
 #include "lua/ii.lua.h"
 #include "build/iihelp.lua.h"    // generated lua stub for loading i2c modules
 #include "lua/calibrate.lua.h"
@@ -45,6 +46,7 @@ const struct lua_lib_locator Lua_libs[] =
     , { "lua_metro"     , lua_metro     }
     , { "lua_input"     , lua_input     }
     , { "lua_output"    , lua_output    }
+    , { "lua_shaper"    , lua_shaper     }
     , { "lua_ii"        , lua_ii        }
     , { "build_iihelp"  , build_iihelp  }
     , { "lua_calibrate" , lua_calibrate }
