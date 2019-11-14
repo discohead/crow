@@ -14,6 +14,7 @@ local function closelibs()
     asl    = nil
     asllib = nil
     metro  = nil
+    shaper = nil
     ii     = nil
     cal    = nil
     midi   = nil
@@ -27,11 +28,12 @@ function _crow.libs( lib )
         asl    = dofile('lua/asl.lua')
         asllib = dofile('lua/asllib.lua')
         metro  = dofile('lua/metro.lua')
+        shaper = dofile('lua/shaper.lua')
         ii     = dofile('lua/ii.lua')
         cal    = dofile('lua/calibrate.lua')
         --midi   = dofile('lua/midi.lua')
     elseif type(lib) == 'table' then
-        -- load the list 
+        -- load the list
     else
         if lib == 'close' then closelibs() end
         -- assume string & load single library
